@@ -1,0 +1,40 @@
+<style>
+    /* Este es para los elementos en general */
+    .navbar .navbar-nav .nav-link {
+    color: white;
+    }
+    /*  Este es para el elemento activo lo puedes omitir si asi deseas */
+    .navbar .navbar-nav .active>.nav-link  {
+     color: white;
+
+    
+    }
+    .navbar {
+    background-color: #900C3F !important;
+  }
+    
+    </style>
+<nav class="navbar navbar-expand-lg">
+    <a href="https://www.utec.edu.sv/">
+    <img src="https://www.utec.edu.sv/assets/img/commons/utec_brand.png"></a>	
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="traductores" routerLinkActive="active">traductores</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="listado" routerLinkActive="active">Listado</a>
+        </li>
+        
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar palabras" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
